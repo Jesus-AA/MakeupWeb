@@ -1,0 +1,15 @@
+# Archivos de configuracion sensible
+js/config.js
+
+# Sistema
+.DS_Store
+Thumbs.db
+node_modules/
+
+# Entorno (si se usa en el futuro)
+.env
+.env.local
+.env.example
+
+# Memory Bank
+.memory-bank/
