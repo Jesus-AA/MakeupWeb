@@ -1,0 +1,8 @@
+[build]
+  command = "bash scripts/generate-config.sh"
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
