@@ -1,8 +1,8 @@
 /* MODULO: Header - Scroll, menu, active link */
 
-var LuxeBridal = window.LuxeBridal || {};
+var MariaMartha = window.MariaMartha || {};
 
-LuxeBridal.Header = (function() {
+MariaMartha.Header = (function() {
 
     var header, navToggle, navMenu;
 

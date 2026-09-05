@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxe Bridal Studio - Book Me</title>
+<title>Maria Martha - Book Me</title>
 <link rel="stylesheet" href="css/styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,13 @@
 <!-- HEADER -->
 <header class="header" id="header">
 <div class="container header__container">
-<a href="#" class="header__logo">Luxe<span>Bridal</span></a>
+<a href="#" class="header__logo">Maria<span>Martha</span></a>
 <nav class="header__nav" id="nav-menu">
 <ul class="header__list">
 <li><a href="#home" class="header__link">Inicio</a></li>
 <li><a href="#experience" class="header__link">La Experiencia</a></li>
+<li><a href="#about" class="header__link">Acerca de Mi</a></li>
+<li><a href="#portafolio" class="header__link">Portafolio</a></li>
 <li><a href="#faq" class="header__link">FAQ</a></li>
 <li><a href="#testimonials" class="header__link">Testimonios</a></li>
 <li><a href="#contact" class="header__link">Contacto</a></li>
@@ -33,15 +35,16 @@
 <section class="hero" id="home">
 <div class="hero__overlay"></div>
 <div class="hero__bg">
-<img src="Dummy%20Pictures/gettyimages-2150308249-612x612.jpg" alt="Bridal makeup">
+<img src="Fotos%20Maquillaje/IMG-20260705-WA0017.jpg" alt="Makeup">
 </div>
 <div class="container hero__container">
 <div class="hero__content">
-<span class="hero__tag">Bridal Makeup Artistry</span>
-<h1 class="hero__title">Reserva tu <span class="gold">Transformacion</span> <br>de Novia</h1>
+<span class="hero__tag">Makeup Artist</span>
+<h1 class="hero__title">Realza tu <span class="gold">Belleza</span> <br>Unica</h1>
 <p class="hero__desc">
-Estas lista para tu transformacion nupcial? Creamos una experiencia de lujo
-donde cada detalle es meticulosamente elaborado para que brilles en tu gran dia.
+¿Lista para lucir radiante en cualquier ocasion? Creamos una experiencia de lujo
+donde cada detalle es meticulosamente elaborado para que brilles — en tu boda,
+un evento especial o tu dia a dia.
 </p>
 <a href="#contact" class="btn btn--primary">Reserva Ahora</a>
 <a href="#experience" class="btn btn--outline">Descubre Mas</a>
@@ -53,11 +56,12 @@ donde cada detalle es meticulosamente elaborado para que brilles en tu gran dia.
 <section class="experience section" id="experience">
 <div class="container">
 <div class="section__header">
-<span class="section__subtitle">The Luxe Experience</span>
-<h2 class="section__title">Nuestro <span class="gold">Estilo</span> Exclusivo</h2>
-<p class="section__desc">Nuestro trabajo va mas alla del maquillaje; creamos un look digno de IG filter, con una experiencia de lujo donde cada detalle esta perfectamente cuidado.</p>
+<span class="section__subtitle">The Experience</span>
+<h2 class="section__title">Mi <span class="gold">Estilo</span> Exclusivo</h2>
+<p class="section__desc">Mi trabajo va mas alla del maquillaje; creo un look a tu medida, con una experiencia de lujo donde cada detalle esta pensado para ti.</p>
 </div>
-<div class="experience__grid">
+<div class="carousel">
+<div class="experience__grid carousel__track">
 <div class="experience__card">
 <div class="experience__icon"><i class="fas fa-star"></i></div>
 <h3>Cobertura Impecable</h3>
@@ -66,36 +70,84 @@ donde cada detalle es meticulosamente elaborado para que brilles en tu gran dia.
 <div class="experience__card">
 <div class="experience__icon"><i class="fas fa-feather"></i></div>
 <h3>Glamour Romantico</h3>
-<p>Delineador romantico, labios gloss y elegancia atemporal para tu gran dia.</p>
+<p>Delineador romantico, labios gloss y elegancia atemporal para cualquier ocasion.</p>
 </div>
 <div class="experience__card">
 <div class="experience__icon"><i class="fas fa-gem"></i></div>
 <h3>Productos de Lujo</h3>
 <p>Marcas profesionales como NARS, Chanel, Dior, Charlotte Tilbury y mas.</p>
 </div>
-<div class="experience__card">
-<div class="experience__icon"><i class="fas fa-clock"></i></div>
-<h3>Tiempo Dedicado</h3>
-<p>Maquillaje de novia: 2h. Cortejo: 45 min. Sin prisas, con perfeccion.</p>
+</div>
+<button class="carousel__arrow carousel__arrow--prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+<button class="carousel__arrow carousel__arrow--next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+<div class="carousel__dots"></div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+<div class="container">
+<div class="about__wrapper">
+<div class="about__image">
+<img src="Fotos%20Maquillaje/Yo.jpg" alt="Maria Martha Menendez">
+</div>
+<div class="about__content">
+<span class="section__subtitle">Acerca de Mi</span>
+<h2 class="section__title">Maria Martha <span class="gold">Menendez</span></h2>
+<div class="about__tagline"><i class="fas fa-paint-brush"></i> Maquilladora Profesional</div>
+<p class="about__desc">
+Con mas de 10 años de experiencia, he dedicado mi carrera a realzar la belleza
+natural de cada persona. Comence mi trayectoria en Mexico, donde maquille a novias
+y participe en producciones editoriales y eventos sociales, desarrollando un estilo
+romantico, elegante y atemporal.
+</p>
+<p class="about__desc">
+Mi pasion por el maquillaje me llevo a continuar mi formacion y carrera en Irlanda
+y en España. Realice mis estudios en Workshop Experience Madrid, hoy conocida como
+Kohl School Madrid, una de las escuelas mas prestigiosas del sector.
+</p>
+<div class="about__stats">
+<div class="about__stat">
+<span class="about__stat-number">10+</span>
+<span class="about__stat-label">Anos de Experiencia</span>
+</div>
+<div class="about__stat">
+<span class="about__stat-number">3</span>
+<span class="about__stat-label">Paises</span>
+</div>
+</div>
 </div>
 </div>
 </div>
 </section>
 
 <!-- GALLERY -->
-<section class="gallery section">
+<section class="gallery section" id="portafolio">
 <div class="container">
 <div class="section__header">
 <span class="section__subtitle">Nuestro Portafolio</span>
 <h2 class="section__title">Looks que <span class="gold">Inspiran</span></h2>
 </div>
-<div class="gallery__grid">
-<div class="gallery__item"><img src="Dummy%20Pictures/gettyimages-1331637318-612x612.jpg" alt="Bridal 1"></div>
-<div class="gallery__item"><img src="Dummy%20Pictures/gettyimages-1461330379-612x612.jpg" alt="Bridal 2"></div>
-<div class="gallery__item"><img src="Dummy%20Pictures/gettyimages-1471931416-612x612.jpg" alt="Bridal 3"></div>
-<div class="gallery__item"><img src="Dummy%20Pictures/gettyimages-2080405900-612x612.jpg" alt="Bridal 4"></div>
-<div class="gallery__item"><img src="Dummy%20Pictures/gettyimages-2155031694-612x612.jpg" alt="Bridal 5"></div>
-<div class="gallery__item"><img src="Dummy%20Pictures/gettyimages-2170497012-612x612.jpg" alt="Bridal 6"></div>
+<div class="carousel">
+<div class="gallery__grid carousel__track">
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0008.jpg" alt="Look1"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0009.jpg" alt="Look2"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0010.jpg" alt="Look3"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0011.jpg" alt="Look4"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0012.jpg" alt="Look5"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0013.jpg" alt="Look6"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0007.jpg" alt="Look de maquillaje"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0018.jpg" alt="Look de maquillaje"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0020.jpg" alt="Look de maquillaje"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0021.jpg" alt="Look de maquillaje"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0022.jpg" alt="Look de maquillaje"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0023.jpg" alt="Look de maquillaje"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0024.jpg" alt="Look de maquillaje"></div>
+<div class="gallery__item"><img src="Fotos%20Maquillaje/IMG-20260705-WA0014.jpg" alt="Look de maquillaje"></div>
+</div>
+<button class="carousel__arrow carousel__arrow--prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+<button class="carousel__arrow carousel__arrow--next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+<div class="carousel__dots"></div>
 </div>
 </div>
 </section>
@@ -109,27 +161,19 @@ donde cada detalle es meticulosamente elaborado para que brilles en tu gran dia.
 </div>
 <div class="faq__container">
 <div class="faq__item">
-<button class="faq__question"><span>Como elijo a mi artista de maquillaje?</span><i class="fas fa-chevron-down"></i></button>
-<div class="faq__answer"><p>Puedes seleccionar a un artista especifico con un costo adicional de $150. Normalmente asignamos al artista ideal segun tus fotos de inspiracion y disponibilidad.</p></div>
+<button class="faq__question"><span>¿Puedo agendar una prueba antes de reservar?</span><i class="fas fa-chevron-down"></i></button>
+<div class="faq__answer"><p>Te recomendamos explorar nuestro portafolio, Instagram y reseñas para asegurarte de que mi maquillaje es ideal para ti.</p></div>
 </div>
 <div class="faq__item">
-<button class="faq__question"><span>Puedo agendar una prueba antes de reservar?</span><i class="fas fa-chevron-down"></i></button>
-<div class="faq__answer"><p>Te recomendamos explorar nuestro portafolio, Instagram y resenas para asegurarte de que somos el equipo ideal para ti.</p></div>
-</div>
-<div class="faq__item">
-<button class="faq__question"><span>Trabajan con piel madura?</span><i class="fas fa-chevron-down"></i></button>
+<button class="faq__question"><span>¿Trabajan con piel madura?</span><i class="fas fa-chevron-down"></i></button>
 <div class="faq__answer"><p>Si! Todos nuestros artistas estan entrenados para trabajar con piel madura, usando productos y tecnicas que crean un look hidratado, natural y rejuvenecedor.</p></div>
 </div>
 <div class="faq__item">
-<button class="faq__question"><span>Que productos usan?</span><i class="fas fa-chevron-down"></i></button>
+<button class="faq__question"><span>¿Que productos usan?</span><i class="fas fa-chevron-down"></i></button>
 <div class="faq__answer"><p>Usamos marcas de lujo como NARS, Chanel, Dior, Charlotte Tilbury, Gucci Beauty, Fenty Beauty y mas.</p></div>
 </div>
 <div class="faq__item">
-<button class="faq__question"><span>Cuanto tiempo toma el maquillaje de novia?</span><i class="fas fa-chevron-down"></i></button>
-<div class="faq__answer"><p>Maquillaje de novia: 2h. Cortejo: 45 min. Peinado de novia: 1.5 a 2h. Peinado de cortejo: 45 min.</p></div>
-</div>
-<div class="faq__item">
-<button class="faq__question"><span>Debo preparar mi piel antes de la cita?</span><i class="fas fa-chevron-down"></i></button>
+<button class="faq__question"><span>¿Debo preparar mi piel antes de la cita?</span><i class="fas fa-chevron-down"></i></button>
 <div class="faq__answer"><p>Si, la preparacion es esencial. Te damos instrucciones detalladas para que tu piel luzca radiante.</p></div>
 </div>
 </div>
@@ -141,33 +185,35 @@ donde cada detalle es meticulosamente elaborado para que brilles en tu gran dia.
 <div class="container">
 <div class="section__header">
 <span class="section__subtitle">Testimonios</span>
-<h2 class="section__title">Lo que dicen <span class="gold">nuestras novias</span></h2>
+<h2 class="section__title">Lo que dicen <span class="gold">nuestras clientas</span></h2>
 </div>
-<div class="testimonials__grid">
+<div class="carousel">
+<div class="testimonials__grid carousel__track">
 <div class="testimonial__card">
-<div class="testimonial__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-<p class="testimonial__text">"No podria agradecerle lo suficiente por lo bien que me hizo sentir. Su trabajo es impecable."</p>
+<img class="testimonial__image" src="Testimonios/IMG-20260705-WA0007_Testimonio_Sandra.jpg" alt="Testimonio de Sandra">
 <div class="testimonial__author">
-<img src="Dummy%20Pictures/gettyimages-1301487903-612x612.jpg" alt="Rawan">
-<div><h4>Rawan Elbadawy</h4><span>Novia</span></div>
-</div>
-</div>
-<div class="testimonial__card">
-<div class="testimonial__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-<p class="testimonial__text">"Fue tan paciente y logro mantenerme tranquila. Me senti hermosa todo el dia."</p>
-<div class="testimonial__author">
-<img src="Dummy%20Pictures/gettyimages-1823930646-612x612.jpg" alt="Jodee">
-<div><h4>Jodee Tindal</h4><span>Novia</span></div>
+<img src="Fotos%20Maquillaje/IMG-20260705-WA0007.jpg" alt="Sandra">
+<div><h4>Sandra</h4><span>Cliente</span></div>
 </div>
 </div>
 <div class="testimonial__card">
-<div class="testimonial__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-<p class="testimonial__text">"El maquillaje duro perfecto toda la noche. Bajo el calor, las lagrimas y los abrazos. Magico."</p>
+<img class="testimonial__image" src="Testimonios/IMG-20260705-WA0014_Testimonio_Sharon.jpg" alt="Testimonio de Sharon">
 <div class="testimonial__author">
-<img src="Dummy%20Pictures/gettyimages-1206721088-612x612.jpg" alt="Sofia">
-<div><h4>Sofia Martinez</h4><span>Novia</span></div>
+<img src="Fotos%20Maquillaje/IMG-20260705-WA0014.jpg" alt="Sharon">
+<div><h4>Sharon</h4><span>Cliente</span></div>
 </div>
 </div>
+<div class="testimonial__card">
+<img class="testimonial__image" src="Testimonios/IMG-20260705-WA0021_Testimonio_Alejandra.jpg" alt="Testimonio de Alejandra">
+<div class="testimonial__author">
+<img src="Fotos%20Maquillaje/IMG-20260705-WA0021.jpg" alt="Alejandra">
+<div><h4>Alejandra</h4><span>Cliente</span></div>
+</div>
+</div>
+</div>
+<button class="carousel__arrow carousel__arrow--prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+<button class="carousel__arrow carousel__arrow--next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+<div class="carousel__dots"></div>
 </div>
 </div>
 </section>
@@ -178,28 +224,28 @@ donde cada detalle es meticulosamente elaborado para que brilles en tu gran dia.
 <div class="section__header">
 <span class="section__subtitle">Contactanos</span>
 <h2 class="section__title">Reserva tu <span class="gold">Experiencia</span></h2>
-<p class="section__desc">Lista para verte espectacular en tu gran dia? Dejanos tus datos y te contactaremos para crear el look de tus suenos.</p>
+<p class="section__desc">Lista para verte espectacular en tu proximo evento? Dejame tus datos y te contactare para crear el look de tus sueños.</p>
 </div>
 <div class="contact__wrapper">
 <div class="contact__info">
-<h3>Hablemos de tu boda</h3>
+<h3>Hablemos de tu look</h3>
 <div class="contact__item">
 <i class="fas fa-envelope"></i>
-<div><strong>Email</strong><p>info@luxebridalstudio.com</p></div>
+<div><strong>Email</strong><p>mariamarthamenendez@gmail.com</p></div>
 </div>
 <div class="contact__item">
 <i class="fas fa-map-marker-alt"></i>
-<div><strong>Ubicacion</strong><p>123 Beauty Street, Charleston, SC 29401</p></div>
+<div><strong>Ubicacion</strong><p>Madrid</p></div>
 </div>
 <div class="contact__item">
 <i class="fas fa-phone"></i>
-<div><strong>Telefono</strong><p>(843) 619-0349</p></div>
+<div><strong>Telefono</strong><p>+34685444317</p></div>
 </div>
 <div class="contact__social">
-<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-<a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+<a href="https://www.instagram.com/mariamarthamakeup" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@mariamartha99" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
 </div>
+<a href="https://wa.me/34685444317?text=Hola%20Maria%20Martha%2C%20me%20gustaria%20info%20sobre%20maquillaje" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i> Escribeme por WhatsApp</a>
 </div>
 <form class="contact__form" id="contactForm" action="#" method="POST" novalidate>
 <div id="formErrors" class="form__errors" style="display:none;"></div>
@@ -213,7 +259,7 @@ donde cada detalle es meticulosamente elaborado para que brilles en tu gran dia.
 <input type="tel" name="phone" id="phone" placeholder="Tu Telefono movil (ej: 612345678)" required>
 </div>
 <div class="form__group">
-<input type="text" name="wedding_date" id="wedding_date" placeholder="Fecha de tu Boda" onfocus="(this.type='date')">
+<input type="text" name="wedding_date" id="wedding_date" placeholder="Dia de tu evento" onfocus="(this.type='date')">
 </div>
 <div class="form__group">
 <textarea name="message" id="message" placeholder="Cuentanos sobre el look que deseas..." rows="5" required></textarea>
@@ -233,14 +279,16 @@ donde cada detalle es meticulosamente elaborado para que brilles en tu gran dia.
 <footer class="footer">
 <div class="container footer__container">
 <div class="footer__brand">
-<a href="#" class="header__logo">Luxe<span>Bridal</span></a>
-<p>Realzamos la belleza natural con looks romanticos y de alta gama, disenados para la novia apasionada por el maquillaje.</p>
+<a href="#" class="header__logo">Maria<span>Martha</span></a>
+<p>Realzamos la belleza natural con looks romanticos y de alta gama, disenados para quienes aman el maquillaje.</p>
 </div>
 <div class="footer__links">
 <h4>Enlaces</h4>
 <ul>
 <li><a href="#home">Inicio</a></li>
 <li><a href="#experience">La Experiencia</a></li>
+<li><a href="#about">Acerca de Mi</a></li>
+<li><a href="#portafolio">Portafolio</a></li>
 <li><a href="#faq">FAQ</a></li>
 <li><a href="#testimonials">Testimonios</a></li>
 <li><a href="#contact">Contacto</a></li>
@@ -248,21 +296,25 @@ donde cada detalle es meticulosamente elaborado para que brilles en tu gran dia.
 </div>
 <div class="footer__contact">
 <h4>Contacto</h4>
-<p><i class="fas fa-envelope"></i> info@luxebridalstudio.com</p>
-<p><i class="fas fa-phone"></i> (843) 619-0349</p>
-<p><i class="fas fa-map-marker-alt"></i> Charleston | Miami</p>
+<p><i class="fas fa-envelope"></i> mariamarthamenendez@gmail.com</p>
+<p><i class="fas fa-phone"></i> +34685444317</p>
+<p><i class="fas fa-map-marker-alt"></i> Madrid</p>
 </div>
 </div>
 <div class="footer__bottom">
-<p>&copy; 2025 Luxe Bridal Studio. Todos los derechos reservados.</p>
-<p>Diseno web con <i class="fas fa-heart"></i> por Luxe Studio</p>
+<p>&copy; 2025 Maria Martha. Todos los derechos reservados.</p>
+<p>Diseno web con <i class="fas fa-heart"></i> por Maria Martha</p>
 </div>
 </footer>
+
+<!-- WHATSAPP FLOATING -->
+<a href="https://wa.me/34685444317?text=Hola%20Maria%20Martha%2C%20me%20gustaria%20info%20sobre%20maquillaje" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
 <script src="js/config.js"></script>
 <script src="js/modules/utils.js"></script>
 <script src="js/modules/header.js"></script>
 <script src="js/modules/faq.js"></script>
+<script src="js/modules/carousel.js"></script>
 <script src="js/modules/form.js"></script>
 <script src="js/app.js"></script>
 </body>

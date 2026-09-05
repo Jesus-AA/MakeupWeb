@@ -1,4 +1,4 @@
-# Luxe Bridal Studio - Book Me
+# Maria Martha - Book Me
 
 Pagina web profesional para un estudio de maquillaje de novias, disenada para que las clientas conozcan los servicios, resuelvan sus dudas y puedan agendar su cita de manera sencilla.
 
@@ -58,7 +58,7 @@ El formulario incluye validacion en el lado del cliente antes de enviar los dato
 ## Estructura del Proyecto
 
 ```
-luxe-bridal-studio/
+maria-martha/
 +-- index.html              # Pagina principal
 +-- css/
 |   +-- styles.css          # Estilos CSS
@@ -79,4 +79,4 @@ luxe-bridal-studio/
 
 ---
 
-Desarrollado con ❤️ por Luxe Studio
+Desarrollado con ❤️ por Maria Martha

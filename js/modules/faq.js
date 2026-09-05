@@ -2,9 +2,9 @@
    MODULO: FAQ Accordion
    ==================================== */
 
-var LuxeBridal = window.LuxeBridal || {};
+var MariaMartha = window.MariaMartha || {};
 
-LuxeBridal.Faq = (function() {
+MariaMartha.Faq = (function() {
 
     function init() {
         var faqQuestions = document.querySelectorAll('.faq__question');

@@ -3,9 +3,9 @@
    Smooth scroll, validadores, helpers
    ==================================== */
 
-var LuxeBridal = window.LuxeBridal || {};
+var MariaMartha = window.MariaMartha || {};
 
-LuxeBridal.Utils = (function() {
+MariaMartha.Utils = (function() {
 
     // ===== SMOOTH SCROLL =====
     function initSmoothScroll(headerSelector) {

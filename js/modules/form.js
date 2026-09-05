@@ -1,8 +1,8 @@
 /* MODULO: Formulario - Validacion y envio */
 
-var LuxeBridal = window.LuxeBridal || {};
+var MariaMartha = window.MariaMartha || {};
 
-LuxeBridal.Form = (function() {
+MariaMartha.Form = (function() {
 
     var contactForm, formSuccess, formErrors;
 
@@ -37,20 +37,20 @@ LuxeBridal.Form = (function() {
 
     function validate() {
         var errors = [];
-        LuxeBridal.Utils.clearFieldErrors();
+        MariaMartha.Utils.clearFieldErrors();
         if (formErrors) {
             formErrors.style.display = 'none';
             formErrors.innerHTML = '';
         }
         var email = document.getElementById('email').value.trim();
         var phone = document.getElementById('phone').value.trim();
-        if (!LuxeBridal.Utils.validateEmail(email)) {
+        if (!MariaMartha.Utils.validateEmail(email)) {
             errors.push('Correo electronico no valido. Ejemplo: nombre@dominio.com');
-            LuxeBridal.Utils.showFieldError('email', 'Correo no valido');
+            MariaMartha.Utils.showFieldError('email', 'Correo no valido');
         }
-        if (!LuxeBridal.Utils.validateSpanishPhone(phone)) {
+        if (!MariaMartha.Utils.validateSpanishPhone(phone)) {
             errors.push('Telefono movil espanol no valido. Ej: 612345678 o +34612345678');
-            LuxeBridal.Utils.showFieldError('phone', 'Movil no valido');
+            MariaMartha.Utils.showFieldError('phone', 'Movil no valido');
         }
         return errors;
     }

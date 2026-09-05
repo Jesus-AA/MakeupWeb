@@ -1,8 +1,9 @@
 /* APP: Punto de entrada */
 
 document.addEventListener('DOMContentLoaded', function() {
-    LuxeBridal.Header.init();
-    LuxeBridal.Faq.init();
-    LuxeBridal.Form.init();
-    LuxeBridal.Utils.initSmoothScroll('#header');
+    MariaMartha.Header.init();
+    MariaMartha.Faq.init();
+    MariaMartha.Carousel.init();
+    MariaMartha.Form.init();
+    MariaMartha.Utils.initSmoothScroll('#header');
 });
