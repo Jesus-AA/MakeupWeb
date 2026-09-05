@@ -13,3 +13,6 @@ node_modules/
 
 # Memory Bank
 .memory-bank/
+
+# Ignorar archivos de agentes personalizados de GitHub Copilot
+.github/agents/*.agent.md
