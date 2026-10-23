@@ -1,7 +1,6 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Sin redireccion comodin: es una sola pagina, y la redireccion /* -> /index.html
+# hacia que robots.txt, sitemap.xml y cualquier URL inexistente devolvieran la portada.
+# Las rutas que no existen muestran 404.html (Netlify lo usa automaticamente).

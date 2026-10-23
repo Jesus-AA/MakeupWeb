@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mariamarthamakeup.netlify.app/sitemap.xml

@@ -43,6 +43,13 @@ Cada foto puede llevar un recorte propio en la cuadrícula, sin modificar el arc
 
 Al abrir la foto en el visor se ve completa, sin recorte.
 
+## SEO
+
+- URL publicada: https://mariamarthamakeup.netlify.app/ (está en el canonical, Open Graph, schema, `robots.txt` y `sitemap.xml`; si se cambia a un dominio propio, hay que actualizarla en todos).
+- `sitemap.xml`: actualiza `<lastmod>` cuando cambie el contenido.
+- Las URLs que no existen muestran `404.html`. No añadas una redirección `/* → /index.html` en `netlify.toml`: haría que `robots.txt`, `sitemap.xml` y cualquier URL inexistente devolvieran la portada.
+- Los precios también están en el schema (`hasOfferCatalog` en `index.html`): si cambian las tarifas, actualízalos en los dos sitios.
+
 ## Diseño (dirección "Rosa Cereza")
 
 | Token | Color | Uso |

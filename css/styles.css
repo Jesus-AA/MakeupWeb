@@ -102,6 +102,8 @@ em { font-style: italic; }
 .chip { background: var(--rubor); border-radius: var(--pill); padding: 6px 14px; font-size: .9rem; font-weight: 500; }
 .hero__title { font-family: var(--font-display); font-size: clamp(3rem, 7vw, 5.4rem); line-height: .96; letter-spacing: -.02em; }
 .hero__title em { color: var(--cereza); }
+/* Linea pequeña dentro del H1: dice a Google (y a la clienta) que hace y donde */
+.hero__kicker { display: block; margin-bottom: 18px; font-family: var(--font-body); font-size: .82rem; font-weight: 600; line-height: 1.4; letter-spacing: .14em; text-transform: uppercase; color: var(--cereza); }
 .hero__desc { font-size: 1.15rem; color: var(--tinta-soft); max-width: 40ch; }
 .hero__ctas { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
 .hero__facts { display: flex; flex-wrap: wrap; gap: 10px 28px; padding-top: 22px; border-top: 1px solid var(--rubor-line); font-size: .9rem; color: var(--tinta-soft); }
@@ -295,7 +297,7 @@ em { font-style: italic; }
   .hero { padding-block: 20px 56px; }
   .hero__container { gap: 20px; }
   .hero__content { display: contents; }
-  .chips { order: 1; }
+  .chips { display: none; } /* en movil ya lo dice la linea pequeña del titular */
   .hero__title { order: 2; font-size: clamp(2.6rem, 11vw, 3.4rem); }
   .hero__art { order: 3; width: min(68%, 300px); margin: 4px 0 18px; }
   .hero__desc { order: 4; font-size: 1.05rem; }
@@ -325,7 +327,7 @@ em { font-style: italic; }
 
   /* Zonas de toque comodas para el dedo */
   .link, .testimonial__source { display: inline-block; padding-block: 10px 4px; }
-  .contact__info a { display: inline-block; padding-block: 4px; }
+  .contact__info div > a { display: inline-block; padding-block: 4px; }
   .footer__links a { display: inline-block; padding-block: 8px; }
   .testimonial blockquote { font-size: 1.4rem; }
   body { padding-bottom: 84px; }
