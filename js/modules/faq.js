@@ -1,5 +1,5 @@
 /* ====================================
-   MODULO: FAQ Accordion
+   MODULO: Preguntas frecuentes (acordeon)
    ==================================== */
 
 var MariaMartha = window.MariaMartha || {};
@@ -7,24 +7,24 @@ var MariaMartha = window.MariaMartha || {};
 MariaMartha.Faq = (function() {
 
     function init() {
-        var faqQuestions = document.querySelectorAll('.faq__question');
-        if (faqQuestions.length === 0) return;
+        var questions = document.querySelectorAll('.faq__question');
+        if (questions.length === 0) return;
 
-        faqQuestions.forEach(function(question) {
+        questions.forEach(function(question) {
             question.addEventListener('click', function() {
-                var answer = question.nextElementSibling;
-                var isOpen = answer.classList.contains('open');
+                var item = question.closest('.faq__item');
+                var isOpen = question.getAttribute('aria-expanded') === 'true';
 
-                // Cerrar todos los demas
-                faqQuestions.forEach(function(q) {
-                    q.classList.remove('active');
-                    q.nextElementSibling.classList.remove('open');
+                // Cerrar las demas
+                questions.forEach(function(q) {
+                    q.setAttribute('aria-expanded', 'false');
+                    q.closest('.faq__item').classList.remove('open');
                 });
 
-                // Abrir el clickeado si estaba cerrado
+                // Abrir la pulsada si estaba cerrada
                 if (!isOpen) {
-                    question.classList.add('active');
-                    answer.classList.add('open');
+                    question.setAttribute('aria-expanded', 'true');
+                    item.classList.add('open');
                 }
             });
         });

@@ -1,82 +1,76 @@
-# Maria Martha - Book Me
+# Maria Martha Makeup
 
-Pagina web profesional para un estudio de maquillaje de novias, disenada para que las clientas conozcan los servicios, resuelvan sus dudas y puedan agendar su cita de manera sencilla.
-
-## Demo
-
-Abre el archivo `index.html` en cualquier navegador para visualizar la pagina. No requiere servidor ni dependencias adicionales.
-
-## Secciones
-
-- **Header** - Navegacion fija con menu responsivo (hamburguesa en movil)
-- **Hero** - Presentacion principal con imagen de fondo y llamada a la accion
-- **La Experiencia** - Cards con los servicios destacados del estudio
-- **Galeria** - Portafolio visual con looks de maquillaje
-- **FAQ** - Seccion de preguntas frecuentes con acordeon interactivo
-- **Testimonios** - Resenas de clientas con fotos y valoraciones
-- **Contacto** - Formulario de reserva e informacion de contacto
-- **Footer** - Enlaces, informacion legal y redes sociales
-
-## Tecnologias
-
-- **HTML5** - Estructura semantica
-- **CSS3** - Estilos modernos con diseno responsivo
-- **JavaScript** - Interactividad (acordeon, menu movil, scroll suave, formulario)
-- **Font Awesome** - Iconos vectoriales
-- **Google Fonts** - Tipografia Playfair Display + Raleway
-- **Formspree** - Procesamiento del formulario de contacto (sin servidor propio)
-
-## Paleta de Colores
-
-| Color | Codigo |
-|-------|--------|
-| Dorado | `#C9A96E` |
-| Crema | `#FFFCF8` |
-| Beige | `#F5F0EB` |
-| Texto oscuro | `#2C2C2C` |
-| Negro | `#1A1A1A` |
-
-## Responsive Design
-
-La pagina se adapta a los siguientes puntos de quiebre:
-
-- **Desktop**: > 992px
-- **Tablet**: 768px - 992px
-- **Movil**: 480px - 768px
-- **Movil pequeno**: < 480px
-
-## Validacion del Formulario
-
-El formulario incluye validacion en el lado del cliente antes de enviar los datos:
-
-- **Email**: Validacion de formato basico (nombre@dominio.com)
-- **Telefono movil**: Validacion de numero movil espanol. Acepta:
-  - Formato nacional: `612345678` (9 digitos empezando por 6 o 7)
-  - Formato internacional: `+34612345678` (con prefijo +34)
-- Los errores se muestran en un contenedor rojo sobre el formulario y resaltando cada campo invalido
-
-## Estructura del Proyecto
-
-```
-maria-martha/
-+-- index.html              # Pagina principal
-+-- css/
-|   +-- styles.css          # Estilos CSS
-+-- js/
-|   +-- script.js           # JavaScript (FAQ, menu, formulario)
-+-- Dummy Pictures/         # Imagenes de stock
-|   +-- gettyimages-*.jpg
-|   +-- ...
-+-- README.md               # Este archivo
-```
+Web de Maria Martha, maquilladora y peinadora de novias e invitadas en Madrid. Las clientas ven los servicios y precios, el portafolio y cómo reservar, y contactan por WhatsApp.
 
 ## Uso
 
-1. Clona o descarga el repositorio
-2. Abre `index.html` en tu navegador
-3. Personaliza los textos, imagenes y colores segun tu marca
-4. Configura Formspree para activar el formulario de contacto
+Abre `index.html` en el navegador. No hace falta servidor ni dependencias. En Netlify se publica tal cual (ver `netlify.toml`), sin paso de build.
 
----
+## Secciones
 
-Desarrollado con ❤️ por Maria Martha
+- **Inicio**: mensaje principal, botón de reserva por WhatsApp y datos clave.
+- **Mi forma de trabajar**: tres puntos que diferencian el servicio.
+- **Servicios y tarifas**: pestañas Novias / Invitadas con paquetes nupciales, servicios sueltos y condiciones.
+- **Portafolio**: 18 fotos filtrables (Novias, Invitadas, Peinados) con visor a pantalla completa.
+- **Cómo reservar**: los 4 pasos, de la consulta al día de la boda.
+- **Sobre mí**, **Testimonios** y **Preguntas frecuentes**.
+- **Contacto**: WhatsApp, email, teléfono y redes.
+
+## Contacto por WhatsApp
+
+No hay formulario. Cada enlace con el atributo `data-wa` abre WhatsApp con un mensaje ya escrito:
+
+```html
+<a href="https://wa.me/34685444317" data-wa="Hola María, me interesa el Paquete Nupcial 1">…</a>
+```
+
+Si `data-wa` está vacío se usa el mensaje general. El número y el mensaje general están en `js/modules/utils.js`.
+
+## Precios
+
+Los precios están escritos en `index.html`, en la sección `#servicios`. Las hojas originales están en `Precios/` (fuera de git).
+
+## Fotos del portafolio
+
+Cada foto puede llevar un recorte propio en la cuadrícula, sin modificar el archivo original:
+
+```html
+<img src="…" style="--pos: 58% 42%; --zoom: 1.25;">
+```
+
+- `--pos`: punto de la foto que queda centrado (horizontal y vertical).
+- `--zoom`: ampliación para dejar fuera fondos que distraen.
+
+Al abrir la foto en el visor se ve completa, sin recorte.
+
+## Diseño (dirección "Rosa Cereza")
+
+| Token | Color | Uso |
+|-------|-------|-----|
+| `--polvo` | `#FBF0EE` | Fondo principal |
+| `--nata` | `#FFF9F8` | Secciones claras |
+| `--rubor` | `#F3D3CF` | Chips, pestañas, bandas |
+| `--rosa` | `#C9788A` | Detalles decorativos |
+| `--cereza` | `#8C1D3A` | Botones, enlaces y precios |
+| `--tinta` | `#2B1B21` | Texto |
+
+Tipografías: **Instrument Serif** para titulares (con la palabra clave en cursiva) y **Figtree** para el texto.
+
+## Estructura
+
+```
+MakeupWeb/
+├── index.html
+├── favicon.svg
+├── css/styles.css
+├── js/
+│   ├── app.js              # Punto de entrada
+│   └── modules/
+│       ├── utils.js        # Enlaces de WhatsApp, año del footer
+│       ├── header.js       # Menú móvil, enlace activo
+│       ├── tabs.js         # Pestañas de tarifas
+│       ├── gallery.js      # Filtros y visor del portafolio
+│       └── faq.js          # Acordeón de preguntas
+├── Fotos Maquillaje/
+└── Testimonios/
+```

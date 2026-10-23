@@ -16,3 +16,4 @@ node_modules/
 
 # Ignorar archivos de agentes personalizados de GitHub Copilot
 .github/agents/*.agent.md
+/Precios

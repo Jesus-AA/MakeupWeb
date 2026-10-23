@@ -1,80 +1,35 @@
 /* ====================================
    MODULO: Utilidades generales
-   Smooth scroll, validadores, helpers
+   Enlaces de WhatsApp, año del footer
    ==================================== */
 
 var MariaMartha = window.MariaMartha || {};
 
 MariaMartha.Utils = (function() {
 
-    // ===== SMOOTH SCROLL =====
-    function initSmoothScroll(headerSelector) {
-        var header = document.querySelector(headerSelector) || { offsetHeight: 0 };
+    var WHATSAPP_NUMBER = '34685444317';
+    var DEFAULT_MESSAGE = 'Hola Maria, me gustaría información sobre tus servicios de maquillaje y peinado.';
 
-        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-            anchor.addEventListener('click', function(e) {
-                var targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-
-                var targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    e.preventDefault();
-                    var headerHeight = header.offsetHeight || 0;
-                    var targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+    // ===== WHATSAPP =====
+    // Cada enlace con [data-wa] abre WhatsApp con un mensaje ya escrito.
+    // data-wa="texto" usa ese texto; data-wa vacio usa el mensaje general.
+    function initWhatsAppLinks() {
+        document.querySelectorAll('[data-wa]').forEach(function(link) {
+            var message = link.getAttribute('data-wa') || DEFAULT_MESSAGE;
+            link.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
         });
     }
 
-    // ===== EMAIL VALIDATOR =====
-    function validateEmail(email) {
-        var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    }
-
-    // ===== SPANISH PHONE VALIDATOR =====
-    function validateSpanishPhone(phone) {
-        var cleaned = phone.replace(/[\s\-\(\)]/g, '');
-        var re = /^(\+34)?[67]\d{8}$/;
-        return re.test(cleaned);
-    }
-
-    // ===== FIELD ERROR HELPERS =====
-    function clearFieldErrors() {
-        document.querySelectorAll('.form__group input.error, .form__group textarea.error').forEach(function(el) {
-            el.classList.remove('error');
-        });
-        document.querySelectorAll('.field-error').forEach(function(el) {
-            el.remove();
-        });
-    }
-
-    function showFieldError(inputId, message) {
-        var input = document.getElementById(inputId);
-        if (input) {
-            input.classList.add('error');
-            var existing = input.parentElement.querySelector('.field-error');
-            if (!existing) {
-                var err = document.createElement('span');
-                err.className = 'field-error';
-                err.textContent = message;
-                input.parentElement.appendChild(err);
-            }
-        }
+    // ===== AÑO DEL FOOTER =====
+    function initYear() {
+        var year = document.getElementById('year');
+        if (year) year.textContent = new Date().getFullYear();
     }
 
     // API publica
     return {
-        initSmoothScroll: initSmoothScroll,
-        validateEmail: validateEmail,
-        validateSpanishPhone: validateSpanishPhone,
-        clearFieldErrors: clearFieldErrors,
-        showFieldError: showFieldError
+        initWhatsAppLinks: initWhatsAppLinks,
+        initYear: initYear
     };
 
 })();

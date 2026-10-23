@@ -1,321 +1,475 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maria Martha - Book Me</title>
-<link rel="stylesheet" href="css/styles.css">
+<title>Maria Martha Makeup · Maquillaje y peinado para novias en Madrid</title>
+<meta name="description" content="Maquillaje y peinado para novias e invitadas en Madrid. Servicio a domicilio sin coste extra en la zona A. Más de 10 años de experiencia. Reserva por WhatsApp.">
+<meta name="theme-color" content="#FBF0EE">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>document.documentElement.className = 'js';</script>
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Maria Martha Makeup · Novias e invitadas en Madrid">
+<meta property="og:description" content="Maquillaje y peinado a domicilio en Madrid. Paquetes nupciales, pruebas y servicios para invitadas.">
+<meta property="og:image" content="Fotos%20Maquillaje/IMG-20260705-WA0017.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Maria Martha Makeup",
+  "description": "Maquillaje y peinado para novias e invitadas en Madrid, a domicilio.",
+  "telephone": "+34685444317",
+  "email": "mariamarthamenendez@gmail.com",
+  "areaServed": "Madrid",
+  "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" },
+  "priceRange": "40 € - 650 €",
+  "sameAs": [
+    "https://www.instagram.com/mariamarthamakeup",
+    "https://www.tiktok.com/@mariamartha99"
+  ]
+}
+</script>
 </head>
 <body>
 
+<!-- ICONOS (sprite SVG) -->
+<svg width="0" height="0" class="sprite" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2.8a9.2 9.2 0 0 0-7.9 13.9L3 21l4.4-1.1A9.2 9.2 0 1 0 12 2.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 7.9c.2-.4.5-.4.8-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .5-.1.6l-.5.6c-.1.1-.2.3 0 .5.6 1 1.4 1.8 2.5 2.4.2.1.4.1.5-.1l.6-.7c.2-.2.4-.2.6-.1l1.6.8c.2.1.4.3.3.5 0 .7-.4 1.4-1 1.6-.7.3-1.6.3-3.4-.6-2.1-1.1-3.5-3-3.8-3.7-.5-.9-.6-2.2.2-3.4Z" fill="currentColor"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24"><path d="M16.5 3c.4 2.2 1.9 3.8 4 4.1v3.1c-1.5 0-2.9-.4-4-1.1v6.4A5.5 5.5 0 1 1 11 10v3.2a2.4 2.4 0 1 0 2.4 2.3V3h3.1Z" fill="currentColor"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
 <!-- HEADER -->
 <header class="header" id="header">
-<div class="container header__container">
-<a href="#" class="header__logo">Maria<span>Martha</span></a>
-<nav class="header__nav" id="nav-menu">
-<ul class="header__list">
-<li><a href="#home" class="header__link">Inicio</a></li>
-<li><a href="#experience" class="header__link">La Experiencia</a></li>
-<li><a href="#about" class="header__link">Acerca de Mi</a></li>
-<li><a href="#portafolio" class="header__link">Portafolio</a></li>
-<li><a href="#faq" class="header__link">FAQ</a></li>
-<li><a href="#testimonials" class="header__link">Testimonios</a></li>
-<li><a href="#contact" class="header__link">Contacto</a></li>
-</ul>
-</nav>
-<button class="header__toggle" id="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
-</div>
+  <div class="container header__container">
+    <a href="#home" class="logo" aria-label="Maria Martha, inicio">Maria <em>Martha</em></a>
+    <nav class="header__nav" id="nav-menu" aria-label="Principal">
+      <ul class="header__list">
+        <li><a href="#servicios" class="header__link">Servicios</a></li>
+        <li><a href="#portafolio" class="header__link">Portafolio</a></li>
+        <li><a href="#reservar" class="header__link">Cómo reservar</a></li>
+        <li><a href="#sobre-mi" class="header__link">Sobre mí</a></li>
+        <li><a href="#preguntas" class="header__link">Preguntas</a></li>
+      </ul>
+      <a class="btn btn--primary btn--small header__nav-cta" href="https://wa.me/34685444317" data-wa target="_blank" rel="noopener">
+        <svg class="icon"><use href="#i-wa"/></svg>Reservar por WhatsApp
+      </a>
+    </nav>
+    <a class="header__cta" href="https://wa.me/34685444317" data-wa target="_blank" rel="noopener">Reservar</a>
+    <button class="header__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+      <svg class="icon icon--menu"><use href="#i-menu"/></svg>
+      <svg class="icon icon--close"><use href="#i-close"/></svg>
+    </button>
+  </div>
 </header>
+<div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+<main id="main">
 
 <!-- HERO -->
 <section class="hero" id="home">
-<div class="hero__overlay"></div>
-<div class="hero__bg">
-<img src="Fotos%20Maquillaje/IMG-20260705-WA0017.jpg" alt="Makeup" loading="eager" fetchpriority="high" decoding="async">
-</div>
-<div class="container hero__container">
-<div class="hero__content">
-<span class="hero__tag">Makeup Artist</span>
-<h1 class="hero__title">Realza tu <span class="gold">Belleza</span> <br>Unica</h1>
-<p class="hero__desc">
-¿Lista para lucir radiante en cualquier ocasion? Creamos una experiencia de lujo
-donde cada detalle es meticulosamente elaborado para que brilles — en tu boda,
-un evento especial o tu dia a dia.
-</p>
-<a href="#contact" class="btn btn--primary">Reserva Ahora</a>
-<a href="#experience" class="btn btn--outline">Descubre Mas</a>
-</div>
-</div>
+  <div class="container hero__container">
+    <div class="hero__content">
+      <ul class="chips" aria-label="Servicios">
+        <li class="chip">Maquillaje</li>
+        <li class="chip">Peinado</li>
+        <li class="chip">A domicilio en Madrid</li>
+      </ul>
+      <h1 class="hero__title">Tu boda, tu estilo, <em>tu mejor versión.</em></h1>
+      <p class="hero__desc">Maquillaje y peinado para novias e invitadas. Una sola artista de principio a fin, con más de 10 años de experiencia.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--primary" href="https://wa.me/34685444317" data-wa target="_blank" rel="noopener">
+          <svg class="icon"><use href="#i-wa"/></svg>Reservar por WhatsApp
+        </a>
+        <a class="link" href="#servicios">Ver tarifas 2026</a>
+      </div>
+      <ul class="hero__facts">
+        <li><strong>10+</strong> años de experiencia</li>
+        <li><strong>Kohl School</strong> formación en Madrid</li>
+        <li><strong>Zona A</strong> a domicilio sin coste</li>
+      </ul>
+    </div>
+    <div class="hero__art">
+      <div class="arch">
+        <img src="Fotos%20Maquillaje/IMG-20260705-WA0017.jpg" alt="Novia de perfil con tocado dorado y piel luminosa" width="1282" height="1600" fetchpriority="high">
+      </div>
+      <div class="arch arch--small">
+        <img src="Fotos%20Maquillaje/IMG-20260705-WA0009.jpg" alt="Recogido bajo con peineta floral" width="1200" height="1600" style="--pos: 60% 45%; --zoom: 1.45;">
+      </div>
+      <span class="sticker" aria-hidden="true">Novias<br>2026</span>
+    </div>
+  </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section class="experience section" id="experience">
-<div class="container">
-<div class="section__header">
-<span class="section__subtitle">The Experience</span>
-<h2 class="section__title">Mi <span class="gold">Estilo</span> Exclusivo</h2>
-<p class="section__desc">Mi trabajo va mas alla del maquillaje; creo un look a tu medida, con una experiencia de lujo donde cada detalle esta pensado para ti.</p>
-</div>
-<div class="carousel">
-<div class="experience__grid carousel__track">
-<div class="experience__card">
-<div class="experience__icon"><i class="fas fa-star"></i></div>
-<h3>Cobertura Impecable</h3>
-<p>Piel perfecta, libre de cake, con un acabado romantico y duradero.</p>
-</div>
-<div class="experience__card">
-<div class="experience__icon"><i class="fas fa-feather"></i></div>
-<h3>Glamour Romantico</h3>
-<p>Delineador romantico, labios gloss y elegancia atemporal para cualquier ocasion.</p>
-</div>
-<div class="experience__card">
-<div class="experience__icon"><i class="fas fa-gem"></i></div>
-<h3>Productos de Lujo</h3>
-<p>Marcas profesionales como NARS, Chanel, Dior, Charlotte Tilbury y mas.</p>
-</div>
-</div>
-<button class="carousel__arrow carousel__arrow--prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
-<button class="carousel__arrow carousel__arrow--next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
-<div class="carousel__dots"></div>
-</div>
-</div>
-
-<!-- ABOUT -->
-<section class="about section" id="about">
-<div class="container">
-<div class="about__wrapper">
-<div class="about__image">
-<img loading="lazy" decoding="async" src="Fotos%20Maquillaje/Yo.jpg" alt="Maria Martha Menendez">
-</div>
-<div class="about__content">
-<span class="section__subtitle">Acerca de Mi</span>
-<h2 class="section__title">Maria Martha <span class="gold">Menendez</span></h2>
-<div class="about__tagline"><i class="fas fa-paint-brush"></i> Maquilladora Profesional</div>
-<p class="about__desc">
-Con mas de 10 años de experiencia, he dedicado mi carrera a realzar la belleza
-natural de cada persona. Comence mi trayectoria en Mexico, donde maquille a novias
-y participe en producciones editoriales y eventos sociales, desarrollando un estilo
-romantico, elegante y atemporal.
-</p>
-<p class="about__desc">
-Mi pasion por el maquillaje me llevo a continuar mi formacion y carrera en Irlanda
-y en España. Realice mis estudios en Workshop Experience Madrid, hoy conocida como
-Kohl School Madrid, una de las escuelas mas prestigiosas del sector.
-</p>
-<div class="about__stats">
-<div class="about__stat">
-<span class="about__stat-number">10+</span>
-<span class="about__stat-label">Anos de Experiencia</span>
-</div>
-<div class="about__stat">
-<span class="about__stat-number">3</span>
-<span class="about__stat-label">Paises</span>
-</div>
-</div>
-</div>
-</div>
-</div>
+<!-- MI FORMA DE TRABAJAR -->
+<section class="pillars" aria-labelledby="pillars-title">
+  <div class="container">
+    <h2 class="visually-hidden" id="pillars-title">Mi forma de trabajar</h2>
+    <ul class="pillars__list">
+      <li class="pillar">
+        <h3>Piel impecable que dura</h3>
+        <p>Acabado luminoso y sin efecto máscara, pensado para aguantar fotos, abrazos y baile.</p>
+      </li>
+      <li class="pillar">
+        <h3>Una sola artista, de principio a fin</h3>
+        <p>Hago yo todos los servicios, de la prueba al día de la boda. Por eso tengo pocas fechas cada temporada.</p>
+      </li>
+      <li class="pillar">
+        <h3>Productos profesionales</h3>
+        <p>Trabajo con marcas como NARS, Chanel, Dior y Charlotte Tilbury. Las pestañas van incluidas.</p>
+      </li>
+    </ul>
+  </div>
 </section>
 
-<!-- GALLERY -->
-<section class="gallery section" id="portafolio">
-<div class="container">
-<div class="section__header">
-<span class="section__subtitle">Nuestro Portafolio</span>
-<h2 class="section__title">Looks que <span class="gold">Inspiran</span></h2>
-</div>
-<div class="carousel">
-<div class="gallery__grid carousel__track">
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0008.jpg" alt="Look1"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0009.jpg" alt="Look2"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0010.jpg" alt="Look3"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0011.jpg" alt="Look4"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0012.jpg" alt="Look5"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0013.jpg" alt="Look6"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0007.jpg" alt="Look de maquillaje"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0018.jpg" alt="Look de maquillaje"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0020.jpg" alt="Look de maquillaje"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0021.jpg" alt="Look de maquillaje"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0022.jpg" alt="Look de maquillaje"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0023.jpg" alt="Look de maquillaje"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0024.jpg" alt="Look de maquillaje"></div>
-<div class="gallery__item"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0014.jpg" alt="Look de maquillaje"></div>
-</div>
-<button class="carousel__arrow carousel__arrow--prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
-<button class="carousel__arrow carousel__arrow--next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
-<div class="carousel__dots"></div>
-</div>
-</div>
+<!-- SERVICIOS Y TARIFAS -->
+<section class="services section" id="servicios" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section__header">
+      <span class="eyebrow">Tarifas 2026</span>
+      <h2 class="section__title" id="services-title">Servicios y <em>tarifas</em></h2>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Tipo de servicio">
+      <button class="tabs__tab" role="tab" id="tab-novias" aria-controls="panel-novias" aria-selected="true">Novias</button>
+      <button class="tabs__tab" role="tab" id="tab-invitadas" aria-controls="panel-invitadas" aria-selected="false" tabindex="-1">Invitadas</button>
+    </div>
+
+    <!-- Novias -->
+    <div class="tabs__panel" role="tabpanel" id="panel-novias" aria-labelledby="tab-novias">
+      <p class="services__intro">El servicio de novia lleva más tiempo y dedicación que el de una invitada, por eso tiene su propia tarifa.</p>
+      <div class="packages">
+        <article class="package package--featured">
+          <span class="package__tag">El más completo</span>
+          <div class="package__top">
+            <h3 class="package__name">Paquete Nupcial 1</h3>
+            <span class="package__price">650&nbsp;€</span>
+          </div>
+          <ul class="package__list">
+            <li>Maquillaje el día de la boda</li>
+            <li>Peinado el día de la boda, del estilo que elijas</li>
+            <li>Prueba de maquillaje</li>
+            <li>Prueba de peinado</li>
+          </ul>
+          <a class="btn btn--primary btn--full" href="https://wa.me/34685444317" data-wa="Hola Maria, me interesa el Paquete Nupcial 1 (650 €). Mi boda es el día " target="_blank" rel="noopener">
+            <svg class="icon"><use href="#i-wa"/></svg>Reservar este paquete
+          </a>
+        </article>
+        <article class="package">
+          <div class="package__top">
+            <h3 class="package__name">Paquete Nupcial 2</h3>
+            <span class="package__price">400&nbsp;€</span>
+          </div>
+          <ul class="package__list">
+            <li>Maquillaje el día de la boda</li>
+            <li>Prueba de maquillaje</li>
+          </ul>
+          <a class="btn btn--outline btn--full" href="https://wa.me/34685444317" data-wa="Hola Maria, me interesa el Paquete Nupcial 2 (400 €). Mi boda es el día " target="_blank" rel="noopener">
+            <svg class="icon"><use href="#i-wa"/></svg>Reservar este paquete
+          </a>
+        </article>
+      </div>
+
+      <div class="price-list">
+        <h3 class="price-list__title">Servicios sueltos para novia</h3>
+        <dl class="price-list__rows">
+          <div class="price-row"><dt>Maquillaje</dt><dd>200&nbsp;€</dd></div>
+          <div class="price-row"><dt>Peinado recogido</dt><dd>120&nbsp;€</dd></div>
+          <div class="price-row"><dt>Peinado semirecogido</dt><dd>100&nbsp;€</dd></div>
+          <div class="price-row"><dt>Cabello suelto: ondas o planchado</dt><dd>70&nbsp;€</dd></div>
+          <div class="price-row"><dt>Prueba de maquillaje <span>2 horas</span></dt><dd>250&nbsp;€</dd></div>
+          <div class="price-row"><dt>Prueba de peinado <span>2 peinados</span></dt><dd>200&nbsp;€</dd></div>
+        </dl>
+        <p class="price-list__note">Reservas tu paquete nupcial con un anticipo de 100&nbsp;€.</p>
+      </div>
+    </div>
+
+    <!-- Invitadas -->
+    <div class="tabs__panel" role="tabpanel" id="panel-invitadas" aria-labelledby="tab-invitadas">
+      <p class="services__intro">Para bodas, bautizos, graduaciones o cualquier evento. Cada servicio dura 1 hora.</p>
+      <div class="price-list price-list--solo">
+        <h3 class="price-list__title">Servicios para invitadas</h3>
+        <dl class="price-list__rows">
+          <div class="price-row"><dt>Maquillaje</dt><dd>100&nbsp;€</dd></div>
+          <div class="price-row"><dt>Peinado recogido</dt><dd>90&nbsp;€</dd></div>
+          <div class="price-row"><dt>Peinado semirecogido</dt><dd>70&nbsp;€</dd></div>
+          <div class="price-row"><dt>Cabello suelto: ondas Hollywood</dt><dd>60&nbsp;€</dd></div>
+          <div class="price-row"><dt>Cabello suelto: planchado u ondas</dt><dd>40&nbsp;€</dd></div>
+        </dl>
+        <p class="price-list__note">Reservas tu cita con un anticipo de 50&nbsp;€.</p>
+        <a class="btn btn--primary" href="https://wa.me/34685444317" data-wa="Hola Maria, quiero reservar un servicio para invitada. El evento es el día " target="_blank" rel="noopener">
+          <svg class="icon"><use href="#i-wa"/></svg>Reservar mi cita
+        </a>
+      </div>
+    </div>
+
+    <ul class="services__notes">
+      <li>Todos los maquillajes incluyen pestañas, de tira o individuales.</li>
+      <li>Los peinados no incluyen extensiones. Si tu peinado las necesita te lo aconsejaré, pero no son obligatorias.</li>
+      <li>Voy a domicilio sin coste extra dentro de la zona A del metro de Madrid.</li>
+      <li>Pago en efectivo o por Bizum.</li>
+    </ul>
+  </div>
 </section>
 
-<!-- FAQ -->
-<section class="faq section" id="faq">
-<div class="container">
-<div class="section__header">
-<span class="section__subtitle">FAQ</span>
-<h2 class="section__title">Preguntas <span class="gold">Frecuentes</span></h2>
-</div>
-<div class="faq__container">
-<div class="faq__item">
-<button class="faq__question"><span>¿Puedo agendar una prueba antes de reservar?</span><i class="fas fa-chevron-down"></i></button>
-<div class="faq__answer"><p>Te recomendamos explorar nuestro portafolio, Instagram y reseñas para asegurarte de que mi maquillaje es ideal para ti.</p></div>
-</div>
-<div class="faq__item">
-<button class="faq__question"><span>¿Trabajan con piel madura?</span><i class="fas fa-chevron-down"></i></button>
-<div class="faq__answer"><p>Si! Todos nuestros artistas estan entrenados para trabajar con piel madura, usando productos y tecnicas que crean un look hidratado, natural y rejuvenecedor.</p></div>
-</div>
-<div class="faq__item">
-<button class="faq__question"><span>¿Que productos usan?</span><i class="fas fa-chevron-down"></i></button>
-<div class="faq__answer"><p>Usamos marcas de lujo como NARS, Chanel, Dior, Charlotte Tilbury, Gucci Beauty, Fenty Beauty y mas.</p></div>
-</div>
-<div class="faq__item">
-<button class="faq__question"><span>¿Debo preparar mi piel antes de la cita?</span><i class="fas fa-chevron-down"></i></button>
-<div class="faq__answer"><p>Si, la preparacion es esencial. Te damos instrucciones detalladas para que tu piel luzca radiante.</p></div>
-</div>
-</div>
-</div>
+<!-- PORTAFOLIO -->
+<section class="gallery section" id="portafolio" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section__header">
+      <span class="eyebrow">Portafolio</span>
+      <h2 class="section__title" id="gallery-title">Looks que <em>inspiran</em></h2>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filtrar portafolio">
+      <button class="filter" aria-pressed="true" data-filter="todos">Todos</button>
+      <button class="filter" aria-pressed="false" data-filter="novias">Novias</button>
+      <button class="filter" aria-pressed="false" data-filter="invitadas">Invitadas</button>
+      <button class="filter" aria-pressed="false" data-filter="peinados">Peinados</button>
+    </div>
+
+    <ul class="gallery__grid" id="gallery-grid">
+      <li class="gallery__item" data-cat="novias"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0013.jpg" alt="Novia con tocado de cristales y ondas suaves" width="1066" height="1600"></button></li>
+      <li class="gallery__item" data-cat="invitadas"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0022.jpg" alt="Maquillaje fresco con ondas largas" width="1280" height="1600"></button></li>
+      <li class="gallery__item" data-cat="peinados"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0009.jpg" alt="Recogido bajo con peineta floral" width="1200" height="1600" style="--pos: 58% 42%; --zoom: 1.25;"></button></li>
+      <li class="gallery__item" data-cat="novias"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0015.jpg" alt="Novia sonriente con tocado dorado y labios rosados" width="1280" height="1600"></button></li>
+      <li class="gallery__item" data-cat="invitadas"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0012.jpg" alt="Maquillaje de ojos ahumado suave con melena ondulada" width="1066" height="1600"></button></li>
+      <li class="gallery__item" data-cat="peinados"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0016.jpg" alt="Moño bajo pulido" width="1200" height="1600" style="--pos: 50% 45%;"></button></li>
+      <li class="gallery__item" data-cat="novias"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0008.jpg" alt="Novia sonriendo con sombra dorada y pestañas" width="1280" height="1600"></button></li>
+      <li class="gallery__item" data-cat="invitadas"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0024.jpg" alt="Maquillaje que resalta los ojos verdes, con labios nude" width="1280" height="1600"></button></li>
+      <li class="gallery__item" data-cat="peinados"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0011.jpg" alt="Semirecogido con ondas y tocado de hojas" width="1200" height="1600" style="--pos: 42% 55%; --zoom: 1.3;"></button></li>
+      <li class="gallery__item" data-cat="novias"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0014.jpg" alt="Novia con maquillaje natural y semirecogido" width="1066" height="1600"></button></li>
+      <li class="gallery__item" data-cat="invitadas"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0021.jpg" alt="Maquillaje natural con piel uniforme y labios nude" width="1280" height="1600"></button></li>
+      <li class="gallery__item" data-cat="peinados"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0010.jpg" alt="Ondas Hollywood en melena larga" width="1280" height="1600" style="--pos: 55% 50%; --zoom: 1.2;"></button></li>
+      <li class="gallery__item" data-cat="novias"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0007.jpg" alt="Novia con bata de satén frente al tocador" width="1200" height="1600" style="--pos: 46% 26%; --zoom: 1.7;"></button></li>
+      <li class="gallery__item" data-cat="invitadas"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0025.jpg" alt="Maquillaje de ojos dorado con melena corta" width="1280" height="1600"></button></li>
+      <li class="gallery__item" data-cat="peinados"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0018.jpg" alt="Coleta baja entrelazada con ondas" width="1066" height="1600"></button></li>
+      <li class="gallery__item" data-cat="novias"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0017.jpg" alt="Novia de perfil con tocado dorado y piel luminosa" width="1282" height="1600"></button></li>
+      <li class="gallery__item" data-cat="invitadas"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0020.jpg" alt="Maquillaje de ojos en tonos malva con delineado" width="1280" height="1600"></button></li>
+      <li class="gallery__item" data-cat="peinados"><button class="gallery__btn" aria-label="Ampliar foto"><img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0023.jpg" alt="Coleta alta con volumen y ondas" width="1280" height="1600"></button></li>
+    </ul>
+    <button class="btn btn--outline gallery__more" id="gallery-more" aria-controls="gallery-grid" hidden>Ver las 18 fotos</button>
+  </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials section" id="testimonials">
-<div class="container">
-<div class="section__header">
-<span class="section__subtitle">Testimonios</span>
-<h2 class="section__title">Lo que dicen <span class="gold">nuestras clientas</span></h2>
-</div>
-<div class="carousel">
-<div class="testimonials__grid carousel__track">
-<div class="testimonial__card">
-<img loading="lazy" decoding="async" class="testimonial__image" src="Testimonios/IMG-20260705-WA0007_Testimonio_Sandra.jpg" alt="Testimonio de Sandra">
-<div class="testimonial__author">
-<img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0007.jpg" alt="Sandra">
-<div><h4>Sandra</h4><span>Cliente</span></div>
-</div>
-</div>
-<div class="testimonial__card">
-<img loading="lazy" decoding="async" class="testimonial__image" src="Testimonios/IMG-20260705-WA0014_Testimonio_Sharon.jpg" alt="Testimonio de Sharon">
-<div class="testimonial__author">
-<img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0014.jpg" alt="Sharon">
-<div><h4>Sharon</h4><span>Cliente</span></div>
-</div>
-</div>
-<div class="testimonial__card">
-<img loading="lazy" decoding="async" class="testimonial__image" src="Testimonios/IMG-20260705-WA0021_Testimonio_Alejandra.jpg" alt="Testimonio de Alejandra">
-<div class="testimonial__author">
-<img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0021.jpg" alt="Alejandra">
-<div><h4>Alejandra</h4><span>Cliente</span></div>
-</div>
-</div>
-</div>
-<button class="carousel__arrow carousel__arrow--prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
-<button class="carousel__arrow carousel__arrow--next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
-<div class="carousel__dots"></div>
-</div>
-</div>
+<!-- COMO RESERVAR -->
+<section class="steps section" id="reservar" aria-labelledby="steps-title">
+  <div class="container">
+    <div class="section__header">
+      <span class="eyebrow">Paso a paso</span>
+      <h2 class="section__title" id="steps-title">Cómo <em>reservar</em></h2>
+    </div>
+    <ol class="steps__list">
+      <li class="step">
+        <h3>Escríbeme</h3>
+        <p>Mándame un WhatsApp con la fecha, el lugar y el servicio que te interesa. Te confirmo si tengo la fecha libre.</p>
+      </li>
+      <li class="step">
+        <h3>Aparta tu fecha</h3>
+        <p>Paga el anticipo por Bizum o en efectivo: 100&nbsp;€ para los paquetes nupciales y 50&nbsp;€ para invitadas.</p>
+      </li>
+      <li class="step">
+        <h3>Tu prueba <span class="step__tag">novias</span></h3>
+        <p>Elige un día en que tengas de 3 a 4 horas libres. Ese día pagas la mitad del paquete.</p>
+      </li>
+      <li class="step">
+        <h3>Tu gran día</h3>
+        <p>Aparta unas 3 horas para el maquillaje y el peinado. Ese día pagas la otra mitad.</p>
+      </li>
+    </ol>
+    <p class="steps__note">El anticipo no se devuelve ni se puede pasar a otra fecha, así que elige tu fecha con calma.</p>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact section" id="contact">
-<div class="container">
-<div class="section__header">
-<span class="section__subtitle">Contactanos</span>
-<h2 class="section__title">Reserva tu <span class="gold">Experiencia</span></h2>
-<p class="section__desc">Lista para verte espectacular en tu proximo evento? Dejame tus datos y te contactare para crear el look de tus sueños.</p>
-</div>
-<div class="contact__wrapper">
-<div class="contact__info">
-<h3>Hablemos de tu look</h3>
-<div class="contact__item">
-<i class="fas fa-envelope"></i>
-<div><strong>Email</strong><p>mariamarthamenendez@gmail.com</p></div>
-</div>
-<div class="contact__item">
-<i class="fas fa-map-marker-alt"></i>
-<div><strong>Ubicacion</strong><p>Madrid</p></div>
-</div>
-<div class="contact__item">
-<i class="fas fa-phone"></i>
-<div><strong>Telefono</strong><p>+34685444317</p></div>
-</div>
-<div class="contact__social">
-<a href="https://www.instagram.com/mariamarthamakeup" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-<a href="https://www.tiktok.com/@mariamartha99" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-</div>
-<a href="https://wa.me/34685444317?text=Hola%20Maria%20Martha%2C%20me%20gustaria%20info%20sobre%20maquillaje" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i> Escribeme por WhatsApp</a>
-</div>
-<form class="contact__form" id="contactForm" action="#" method="POST" novalidate>
-<div id="formErrors" class="form__errors" style="display:none;"></div>
-<div class="form__group">
-<input type="text" name="name" id="name" placeholder="Tu Nombre" required>
-</div>
-<div class="form__group">
-<input type="email" name="email" id="email" placeholder="Tu Email" required>
-</div>
-<div class="form__group">
-<input type="tel" name="phone" id="phone" placeholder="Tu Telefono movil (ej: 612345678)" required>
-</div>
-<div class="form__group">
-<input type="text" name="wedding_date" id="wedding_date" placeholder="Dia de tu evento" onfocus="(this.type='date')">
-</div>
-<div class="form__group">
-<textarea name="message" id="message" placeholder="Cuentanos sobre el look que deseas..." rows="5" required></textarea>
-</div>
-<button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
-</form>
-<div id="formSuccess" class="form__success" style="display:none;">
-<i class="fas fa-check-circle"></i>
-<h3>Mensaje Enviado!</h3>
-<p>Gracias por contactarnos. Te responderemos a la brevedad.</p>
-</div>
-</div>
-</div>
+<!-- SOBRE MI -->
+<section class="about section" id="sobre-mi" aria-labelledby="about-title">
+  <div class="container about__wrapper">
+    <div class="about__image arch">
+      <img loading="lazy" decoding="async" src="Fotos%20Maquillaje/Yo.jpg" alt="Maria Martha Menéndez, maquilladora" width="1536" height="2048" style="--pos: 50% 30%;">
+    </div>
+    <div class="about__content">
+      <span class="eyebrow">Sobre mí</span>
+      <h2 class="section__title" id="about-title">Maria Martha <em>Menéndez</em></h2>
+      <p>Llevo más de 10 años dedicada a realzar la belleza natural de cada persona. Empecé en México, donde maquillé a novias y participé en producciones editoriales y eventos sociales. Ahí desarrollé un estilo romántico, elegante y atemporal.</p>
+      <p>Después seguí formándome y trabajando en Irlanda y en España. Estudié en Workshop Experience Madrid, hoy Kohl School Madrid, una de las escuelas más prestigiosas del sector.</p>
+      <ul class="about__stats">
+        <li><strong>10+</strong><span>años de experiencia</span></li>
+        <li><strong>3</strong><span>países: México, Irlanda y España</span></li>
+        <li><strong>1</strong><span>sola artista en cada servicio</span></li>
+      </ul>
+    </div>
+  </div>
 </section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonials section" id="testimonios" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="section__header">
+      <span class="eyebrow">Testimonios</span>
+      <h2 class="section__title" id="testimonials-title">Lo que dicen <em>mis clientas</em></h2>
+    </div>
+    <ul class="testimonials__grid">
+      <li class="testimonial">
+        <blockquote>“Sigo enamorada. Muchas gracias, Maria, me hiciste lucir tal y como lo soñé. ¡Eres la mejor!”</blockquote>
+        <div class="testimonial__author">
+          <img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0007.jpg" alt="" width="1200" height="1600" style="--pos: 46% 22%;">
+          <div><strong>Sandra</strong><span>Novia</span></div>
+        </div>
+        <button class="testimonial__source" data-src="Testimonios/IMG-20260705-WA0007_Testimonio_Sandra.jpg" data-alt="Comentario original de Sandra en Instagram">Ver comentario original</button>
+      </li>
+      <li class="testimonial">
+        <blockquote>“¡Muchísimas gracias! Me encantó tu trabajo y además muy lindo trato.”</blockquote>
+        <div class="testimonial__author">
+          <img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0014.jpg" alt="" width="1066" height="1600" style="--pos: 50% 25%;">
+          <div><strong>Sharon</strong><span>Novia</span></div>
+        </div>
+        <button class="testimonial__source" data-src="Testimonios/IMG-20260705-WA0014_Testimonio_Sharon.jpg" data-alt="Comentario original de Sharon en Instagram">Ver comentario original</button>
+      </li>
+      <li class="testimonial">
+        <blockquote>“¡Me encantó, como siempre!”</blockquote>
+        <div class="testimonial__author">
+          <img loading="lazy" decoding="async" src="Fotos%20Maquillaje/IMG-20260705-WA0021.jpg" alt="" width="1280" height="1600" style="--pos: 50% 25%;">
+          <div><strong>Alejandra</strong><span>Clienta</span></div>
+        </div>
+        <button class="testimonial__source" data-src="Testimonios/IMG-20260705-WA0021_Testimonio_Alejandra.jpg" data-alt="Comentario original de Alejandra en Instagram">Ver comentario original</button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PREGUNTAS FRECUENTES -->
+<section class="faq section" id="preguntas" aria-labelledby="faq-title">
+  <div class="container faq__container">
+    <div class="section__header section__header--left">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2 class="section__title" id="faq-title">Lo que más me <em>preguntan</em></h2>
+      <p>¿Tienes otra duda? <a class="link" href="https://wa.me/34685444317" data-wa target="_blank" rel="noopener">Escríbeme por WhatsApp</a></p>
+    </div>
+    <div class="faq__list">
+      <div class="faq__item">
+        <h3><button class="faq__question" aria-expanded="false" aria-controls="faq-1">¿Puedo hacer una prueba antes de la boda?<svg class="icon"><use href="#i-plus"/></svg></button></h3>
+        <div class="faq__answer" id="faq-1"><div><p>Sí. La prueba de maquillaje dura 2 horas (250&nbsp;€) y la de peinado incluye 2 peinados (200&nbsp;€). Las dos están incluidas en el Paquete Nupcial 1, y la de maquillaje en el Paquete Nupcial 2. Para la prueba te recomiendo tener de 3 a 4 horas libres.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__question" aria-expanded="false" aria-controls="faq-2">¿Vienes a domicilio?<svg class="icon"><use href="#i-plus"/></svg></button></h3>
+        <div class="faq__answer" id="faq-2"><div><p>Sí. Dentro de la zona A del metro de Madrid no tiene coste extra. En bodas fuera de la ciudad, los billetes y el hotel, si hacen falta, corren a cargo de la novia.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__question" aria-expanded="false" aria-controls="faq-3">¿Cómo aparto mi fecha?<svg class="icon"><use href="#i-plus"/></svg></button></h3>
+        <div class="faq__answer" id="faq-3"><div><p>Escríbeme por WhatsApp y, si la fecha está libre, la apartas con un anticipo: 100&nbsp;€ para los paquetes nupciales y 50&nbsp;€ para invitadas. Puedes pagarlo por Bizum o en efectivo.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__question" aria-expanded="false" aria-controls="faq-4">¿Qué pasa si cancelo?<svg class="icon"><use href="#i-plus"/></svg></button></h3>
+        <div class="faq__answer" id="faq-4"><div><p>El anticipo no se devuelve ni se puede usar para otra fecha. Como trabajo sola, cada fecha que reservo la dejo de ofrecer a otras novias.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__question" aria-expanded="false" aria-controls="faq-5">¿Puedo pagar todo por adelantado?<svg class="icon"><use href="#i-plus"/></svg></button></h3>
+        <div class="faq__answer" id="faq-5"><div><p>No. En los paquetes nupciales pagas la mitad el día de la prueba y la otra mitad el día de la boda.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__question" aria-expanded="false" aria-controls="faq-6">¿Cuánto tiempo tengo que reservar?<svg class="icon"><use href="#i-plus"/></svg></button></h3>
+        <div class="faq__answer" id="faq-6"><div><p>El día de la boda, unas 3 horas para maquillaje y peinado. Para la prueba de novia, de 3 a 4 horas. Los servicios para invitadas duran 1 hora cada uno.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__question" aria-expanded="false" aria-controls="faq-7">¿Los peinados incluyen extensiones?<svg class="icon"><use href="#i-plus"/></svg></button></h3>
+        <div class="faq__answer" id="faq-7"><div><p>No. Si tu peinado las necesita te lo aconsejaré, pero no son obligatorias.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__question" aria-expanded="false" aria-controls="faq-8">¿Trabajas con piel madura?<svg class="icon"><use href="#i-plus"/></svg></button></h3>
+        <div class="faq__answer" id="faq-8"><div><p>Sí. Uso productos y técnicas que dejan un acabado hidratado, natural y luminoso, sin marcar líneas de expresión.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__question" aria-expanded="false" aria-controls="faq-9">¿Tengo que preparar mi piel antes?<svg class="icon"><use href="#i-plus"/></svg></button></h3>
+        <div class="faq__answer" id="faq-9"><div><p>Sí, se nota mucho. Antes de tu cita te envío unas indicaciones para que tu piel llegue hidratada y el maquillaje dure todo el día.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contacto" aria-labelledby="contact-title">
+  <div class="container contact__container">
+    <div class="contact__content">
+      <span class="eyebrow">Contacto</span>
+      <h2 class="section__title" id="contact-title">¿Hablamos de <em>tu look?</em></h2>
+      <p>Cuéntame la fecha, el lugar y el servicio que te interesa. Te respondo por WhatsApp lo antes posible.</p>
+      <a class="btn btn--primary btn--large" href="https://wa.me/34685444317" data-wa target="_blank" rel="noopener">
+        <svg class="icon"><use href="#i-wa"/></svg>Escríbeme por WhatsApp
+      </a>
+    </div>
+    <ul class="contact__info">
+      <li><svg class="icon"><use href="#i-wa"/></svg><div><span>WhatsApp y Bizum</span><a href="tel:+34685444317">+34 685 44 43 17</a></div></li>
+      <li><svg class="icon"><use href="#i-mail"/></svg><div><span>Email</span><a href="mailto:mariamarthamenendez@gmail.com">mariamarthamenendez@gmail.com</a></div></li>
+      <li><svg class="icon"><use href="#i-pin"/></svg><div><span>Zona</span>Madrid, a domicilio</div></li>
+      <li class="contact__social">
+        <a href="https://www.instagram.com/mariamarthamakeup" target="_blank" rel="noopener" aria-label="Instagram de Maria Martha"><svg class="icon"><use href="#i-ig"/></svg></a>
+        <a href="https://www.tiktok.com/@mariamartha99" target="_blank" rel="noopener" aria-label="TikTok de Maria Martha"><svg class="icon"><use href="#i-tt"/></svg></a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
 
 <!-- FOOTER -->
 <footer class="footer">
-<div class="container footer__container">
-<div class="footer__brand">
-<a href="#" class="header__logo">Maria<span>Martha</span></a>
-<p>Realzamos la belleza natural con looks romanticos y de alta gama, disenados para quienes aman el maquillaje.</p>
-</div>
-<div class="footer__links">
-<h4>Enlaces</h4>
-<ul>
-<li><a href="#home">Inicio</a></li>
-<li><a href="#experience">La Experiencia</a></li>
-<li><a href="#about">Acerca de Mi</a></li>
-<li><a href="#portafolio">Portafolio</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a href="#testimonials">Testimonios</a></li>
-<li><a href="#contact">Contacto</a></li>
-</ul>
-</div>
-<div class="footer__contact">
-<h4>Contacto</h4>
-<p><i class="fas fa-envelope"></i> mariamarthamenendez@gmail.com</p>
-<p><i class="fas fa-phone"></i> +34685444317</p>
-<p><i class="fas fa-map-marker-alt"></i> Madrid</p>
-</div>
-</div>
-<div class="footer__bottom">
-<p>&copy; 2025 Maria Martha. Todos los derechos reservados.</p>
-<p>Diseno web con <i class="fas fa-heart"></i> por Maria Martha</p>
-</div>
+  <div class="container footer__container">
+    <div class="footer__brand">
+      <a href="#home" class="logo">Maria <em>Martha</em></a>
+      <p>Maquillaje y peinado para novias e invitadas en Madrid.</p>
+    </div>
+    <nav aria-label="Pie de página">
+      <ul class="footer__links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#reservar">Cómo reservar</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+      </ul>
+    </nav>
+    <p class="footer__copy">© <span id="year">2026</span> Maria Martha Makeup</p>
+  </div>
 </footer>
 
-<!-- WHATSAPP FLOATING -->
-<a href="https://wa.me/34685444317?text=Hola%20Maria%20Martha%2C%20me%20gustaria%20info%20sobre%20maquillaje" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<!-- WHATSAPP: flotante en escritorio, barra fija en movil -->
+<a href="https://wa.me/34685444317" data-wa class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escribir a Maria Martha por WhatsApp"><svg class="icon"><use href="#i-wa"/></svg></a>
+<div class="mobile-bar">
+  <a class="btn btn--primary btn--full" href="https://wa.me/34685444317" data-wa target="_blank" rel="noopener"><svg class="icon"><use href="#i-wa"/></svg>Reservar por WhatsApp</a>
+</div>
 
-<script src="js/config.js"></script>
+<!-- LIGHTBOX -->
+<dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+  <button class="lightbox__close" aria-label="Cerrar"><svg class="icon"><use href="#i-close"/></svg></button>
+  <button class="lightbox__nav lightbox__nav--prev" aria-label="Foto anterior"><svg class="icon"><use href="#i-left"/></svg></button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" src="" alt="">
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" aria-label="Foto siguiente"><svg class="icon"><use href="#i-right"/></svg></button>
+</dialog>
+
 <script src="js/modules/utils.js"></script>
 <script src="js/modules/header.js"></script>
+<script src="js/modules/tabs.js"></script>
+<script src="js/modules/gallery.js"></script>
 <script src="js/modules/faq.js"></script>
-<script src="js/modules/carousel.js"></script>
-<script src="js/modules/form.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
